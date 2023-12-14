@@ -4,7 +4,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['OpenSans']
+        openSansLight: ["OpenSansLight", "sans-serif"],
+        openSansLightItalic: ["OpenSansLightItalic", "sans-serif"],
+        laBelleAurore: ["LaBelleAurore", "sans-serif"],
+        jacquesFrancois: ["JacquesFrancois", "sans-serif"],
+        changaOne: ["ChangaOne", "sans-serif"],
+        changaOneItalic: ["ChangaOneItalic", "sans-serif"],
       }
     },
   },

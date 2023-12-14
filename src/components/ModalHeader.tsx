@@ -12,7 +12,7 @@ const ModalHeader: React.FunctionComponent = () => {
         <div className="p-6">
           <Button
             onClick={() => navigate("/")}
-            className="font-bold"
+            className="font-changaOneItalic"
             type="text"
           >
             Le pavillon gourmand
