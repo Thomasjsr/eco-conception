@@ -2,8 +2,33 @@
 @tailwind components;
 
 @font-face {
-    font-family: 'OpenSans';
-    src: local('OpenSans'), url(./assets/src-eco-conception/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf) format('ttf');
+    font-family: 'OpenSansLight';
+    src: url(./assets/src-eco-conception/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansLightItalic';
+    src: url(./assets/src-eco-conception/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'LaBelleAurore';
+    src: url(./assets/src-eco-conception/La_Belle_Aurore/LaBelleAurore-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'JacquesFrancois';
+    src: url(./assets/src-eco-conception/Jacques_Francois/JacquesFrancois-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ChangaOne';
+    src: url(./assets/src-eco-conception/Changa_One/ChangaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ChangaOneItalic';
+    src: url(./assets/src-eco-conception/Changa_One/ChangaOne-Italic.ttf);
 }
 
 @tailwind utilities;
