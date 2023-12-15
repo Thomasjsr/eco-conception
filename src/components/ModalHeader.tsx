@@ -1,14 +1,15 @@
 import React from "react";
 
 import { Button, Typography } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../assets/src-eco-conception/logo.svg"
 
 const { Text } = Typography;
 
 const ModalHeader: React.FunctionComponent = () => {
+  const navigate = useNavigate();
   return (
-    <div className="flex w-screen items-center justify-between bg-slate-200 p-6">
+    <div className="absolute flex w-screen items-center justify-between p-6">
       <div>
         <Link to={"/"} className="flex items-center justify-between">
           <img src={Logo} className="mr-3" />
@@ -20,7 +21,7 @@ const ModalHeader: React.FunctionComponent = () => {
       <div className="items-stretch p-1">
         <Button
           onClick={() => {
-            console.log("test")
+            navigate('/place')
           }}
           className="font-jacquesFrancois sm:text-lg lg:text-2xl"
           type="text"
@@ -29,7 +30,7 @@ const ModalHeader: React.FunctionComponent = () => {
         </Button>
         <Button
           onClick={() => {
-            console.log("test")
+            navigate('/moment')
           }}
           className="font-jacquesFrancois sm:text-lg lg:text-2xl"
           type="text"
@@ -38,7 +39,7 @@ const ModalHeader: React.FunctionComponent = () => {
         </Button>
         <Button
           onClick={() => {
-            console.log("test")
+            navigate('/find_us')
           }}
           className="font-jacquesFrancois sm:text-lg lg:text-2xl"
           type="text"
