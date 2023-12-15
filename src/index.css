@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
 
 @font-face {
     font-family: 'OpenSansLight';
@@ -30,5 +31,3 @@
     font-family: 'ChangaOneItalic';
     src: url(./assets/src-eco-conception/Changa_One/ChangaOne-Italic.ttf);
 }
-
-@tailwind utilities;
