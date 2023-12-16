@@ -21,7 +21,7 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                         </Text>
                     </div>
                 </div>
-                <div className="w-full h-screen flex">
+                <div className="w-full flex">
                     <div className="h-full w-1/2 bg-[#051528] flex justify-start items-center">
                         <div className="flex flex-col p-4 w-2/3">
                             <Text className="text-white font-changaOne sm:text-xl lg:text-4xl text-5xl">
@@ -32,7 +32,39 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                             </Text>
                         </div>
                     </div>
-                    <div className="h-full w-1/2 bg-gray-500 flex items-center justify-center">MAP</div>
+                    <div className="w-1/2 flex justify-start items-center bg-cover">
+                        <img src="../\src\assets\webp-images\b5c82a2d-5a2a-4016-8538-61502f0de152_le+clos+des+sens+juin+2022+salle-7.webp" className="bg-cover" />
+                    </div>
+                </div>
+                <div className="w-full flex">
+                    <div className="w-1/2 flex justify-start items-center bg-cover">
+                        <img src="../\src\assets\webp-images\3bfeb3de-557b-40e1-af9d-da7e24a58d61_clos-des-sens-septembre-2021-plats-haricots3.webp" className="bg-cover" />
+                    </div>
+                    <div className="h-full w-1/2 bg-[#251715] flex justify-start items-center">
+                        <div className="flex flex-col p-4 w-2/3">
+                            <Text className="text-white font-changaOne sm:text-xl lg:text-4xl text-5xl">
+                                UN MOMENT
+                            </Text>
+                            <Text className="text-[#F2F2F2] font-openSansLight sm:text-sm lg:text-lg text-2xl leading-10">
+                                Par le prisme culinaire, entre pudeur et force vitale, le monde du vivant s’exprime jusqu’à la quintessence. Sublimé, il livre son émotion ultime
+                            </Text>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full flex">
+                    <div className="h-full w-1/2 bg-[#142C08] flex justify-start items-center">
+                        <div className="flex flex-col p-4 w-2/3">
+                            <Text className="text-white font-changaOne sm:text-xl lg:text-4xl text-5xl">
+                                NOUS TROUVER
+                            </Text>
+                            <Text className="text-[#F2F2F2] font-openSansLight sm:text-sm lg:text-lg text-2xl leading-10">
+                                Un lieu unique dans un écrin de nature.
+                            </Text>
+                        </div>
+                    </div>
+                    <div className="w-1/2 flex justify-start items-center bg-cover">
+                        MAP
+                    </div>
                 </div>
             </div>
             <ModalFooter />
