@@ -6,10 +6,14 @@ import Logo from "../assets/src-eco-conception/logo.svg"
 
 const { Text } = Typography;
 
-const ModalHeader: React.FunctionComponent = () => {
+interface ModalHeaderProps {
+  open: boolean;
+}
+
+const ModalHeader: React.FunctionComponent<ModalHeaderProps> = ({ open }) => {
   return (
     <div>
-      <div className="fixed flex w-screen items-center justify-between p-6">
+      <div className={`fixed flex w-screen items-center justify-between p-6 ${open === true ? "" : "hidden"}`}>
         <div>
           <Link to={"/"} className="flex items-center justify-between">
             <img src={Logo} className="mr-3" />

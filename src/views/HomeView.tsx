@@ -3,13 +3,31 @@ import { RouteProps } from "react-router-dom";
 import ModalHeader from "../components/ModalHeader";
 import ModalFooter from "../components/ModalFooter";
 import { Typography } from 'antd';
+import ModalHeaderMobile from "../components/ModalHeaderMobile";
 
 const { Text } = Typography;
 
 const HomeView: React.FunctionComponent<RouteProps> = () => {
+    const [open, setOpen] = useState(window.innerWidth > 640 ? false : true);
+
+    useEffect(() => {
+        const handleResize = () => {
+          if (window.innerWidth > 640) {
+            setOpen(false);
+          } else {
+            setOpen(true)
+          }
+        };
+        window.addEventListener("resize", handleResize);
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <div className="flex h-screen flex-col justify-between">
-            <ModalHeader />
+            <ModalHeader open={!open} />
+            <ModalHeaderMobile open={open} />
             <div className="flex flex-col">
                 <div className="w-full h-screen bg-[url('../\src\assets\webp-images\76ebb484-c1af-4e95-a46e-853f00d41124_reportage-portraits-cuisine-salle-46.webp')] bg-cover bg-no-repeat bg-top">
                     <div className="absolute bottom-4 left-4 p-4">
