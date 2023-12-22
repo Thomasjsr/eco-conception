@@ -27,10 +27,10 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
     }, []);
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col h-screen">
             <ModalHeader open={!open} />
             <ModalHeaderMobile open={open} />
-            <div className="h-screen w-screen">
+            <div className="w-screen">
                 <div className="flex h-1/2 lg:h-screen md:h-1/2 justify-start items-end">
                     <div className="h-full">
                         <Carousel images={imagesHomeFirstCarousel} />
@@ -72,8 +72,23 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                         </div>
                     </div>
                 </div>
+                <div className="flex h-1/2 lg:h-screen md:h-1/2">
+                    <div className="flex justify-start items-center w-1/2 bg-[#142C08]">
+                        <div className="flex flex-col p-3 lg:p-6 lg:w-2/3">
+                            <Text className="text-white font-changaOne sm:text-3xl lg:text-5xl text-lg lg:pb-3">
+                                NOUS TROUVER
+                            </Text>
+                            <Text className="text-[#F2F2F2] font-openSansLight sm:text-xl lg:text-4xl text-xs lg:tracking-wide">
+                                Un lieu unique dans un écrin de nature.
+                            </Text>
+                        </div>
+                    </div>
+                    <div className="w-1/2 bg-white">
+                        map
+                    </div>
+                </div>
+                <ModalFooter />
             </div>
-            {/* <ModalFooter /> */}
         </div>
     );
 };

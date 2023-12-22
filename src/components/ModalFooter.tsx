@@ -9,17 +9,17 @@ const { Text } = Typography;
 
 const ModalFooter: React.FunctionComponent = () => {
   return (
-    <div className="relative">
-      <div className="border-grey flex flex-col text-center bg-black w-full sm:h-[335px] lg:h-[670px]">
-        <div className="text-white h-1/2 flex bg-gray-900 items-center justify-evenly p-10">
-          <img src={Relais_svg}></img>
-          <img src={Michelin_svg}></img>
-          <img src={Gaut_svg}></img>
-          <img src={Eco_svg}></img>
+    <div className="flex h-36 lg:h-72 md:h-80 xl:h-96">
+      <div className="border-grey flex flex-col text-center bg-black w-full">
+        <div className="text-white h-1/2 flex bg-gray-900 items-center justify-evenly p-1">
+          <img src={Relais_svg} className="w-10 md:w-20"></img>
+          <img src={Michelin_svg} className="w-10 md:w-20"></img>
+          <img src={Gaut_svg} className="w-10 md:w-20"></img>
+          <img src={Eco_svg} className="w-10 md:w-20"></img>
         </div>
-        <div className="text-white h-1/2 flex items-end justify-between p-12">
-          <Text className="text-[#f2f2f2]">Pavillon gourmand</Text>
-          <Text className="text-[#f2f2f2]">Mention légales</Text>
+        <div className="text-white h-1/2 flex items-end justify-between p-2 md:p-6 xl:p-10">
+          <Text className="text-[#f2f2f2] text-sm md:text-xl xl:text-2xl">Pavillon gourmand</Text>
+          <Text className="text-[#f2f2f2] text-sm md:text-xl xl:text-2xl">Mention légales</Text>
         </div>
       </div>
     </div>

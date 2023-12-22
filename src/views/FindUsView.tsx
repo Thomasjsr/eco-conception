@@ -72,8 +72,8 @@ const FindUsView: React.FunctionComponent<RouteProps> = () => {
                         </div>
                     </div>
                 </div>
-            </div>
             <ModalFooter />
+            </div>
         </div>
     );
 };
