@@ -31,7 +31,7 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
             <ModalHeader open={!open} />
             <ModalHeaderMobile open={open} />
             <div className="w-screen">
-                <div className="flex h-1/2 lg:h-screen md:h-1/2 justify-start items-end">
+                <div className="flex h-1/4 lg:h-screen md:h-1/4 justify-start items-end">
                     <div className="h-full">
                         <Carousel images={imagesHomeFirstCarousel} />
                     </div>
@@ -42,7 +42,7 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                         3* MICHELIN ANNECY<br />
                     </Text>
                 </div>
-                <div className="flex h-1/2 lg:h-screen md:h-1/2">
+                <div className="flex h-1/4 lg:h-screen md:h-1/4">
                     <div className="flex justify-start items-center w-1/2 bg-[#051528]">
                         <div className="flex flex-col p-3 lg:p-6 lg:w-2/3">
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-5xl text-lg lg:pb-3">
@@ -57,7 +57,7 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                         <Carousel images={imagesHomeSecondCarousel} />
                     </div>
                 </div>
-                <div className="flex h-1/2 lg:h-screen md:h-1/2">
+                <div className="flex h-1/4 lg:h-screen md:h-1/4">
                     <div className="w-1/2">
                         <Carousel images={imagesHomeThirdCarousel} />
                     </div>
@@ -72,7 +72,7 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex h-1/2 lg:h-screen md:h-1/2">
+                <div className="flex h-1/4 lg:h-screen md:h-1/4">
                     <div className="flex justify-start items-center w-1/2 bg-[#142C08]">
                         <div className="flex flex-col p-3 lg:p-6 lg:w-2/3">
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-5xl text-lg lg:pb-3">
