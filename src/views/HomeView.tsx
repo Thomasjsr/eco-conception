@@ -4,7 +4,7 @@ import ModalHeader from "../components/ModalHeader";
 import ModalFooter from "../components/ModalFooter";
 import { Typography } from 'antd';
 import ModalHeaderMobile from "../components/ModalHeaderMobile";
-import { images } from "../utils/images"
+import { imagesHomeFirstCarousel } from "../utils/images"
 const { Text } = Typography;
 
 const HomeView: React.FunctionComponent<RouteProps> = () => {
@@ -26,9 +26,8 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
     }, []);
 
     useEffect(() => {
-        // Change l'image toutes les 5 secondes
         const interval = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imagesHomeFirstCarousel.length);
         }, 8000);
 
         return () => clearInterval(interval);
@@ -41,7 +40,7 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
             <div className="h-screen w-screen">
                 <div className="flex h-1/2 lg:h-screen md:h-1/2 justify-start items-end">
                     <div className="h-full">
-                        <img src={images[currentImageIndex]} className="object-cover h-full w-screen">
+                        <img src={imagesHomeFirstCarousel[currentImageIndex]} className="object-cover h-full w-screen">
                         </img>
                     </div>
                     <Text className="fixed text-white font-changaOne text-lg sm:text-xl md:text-3xl lg:text-5xl pb-8 pl-6">
