@@ -23,8 +23,8 @@ const imagesHomeFirstCarousel: string[] = [
 
 const imagesHomeSecondCarousel: string[] = [
     clos_des_sens_juin_2022_salle_7,
-    CLOS_DES_SENS_MATTHIEU_CELLARD_SALLE_17,
     CLOS_DES_SENS_MATTHIEU_CELLARD_SALLE_85,
+    CLOS_DES_SENS_MATTHIEU_CELLARD_SALLE_17,
 ];
 
 const imagesHomeThirdCarousel: string[] = [
