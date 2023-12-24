@@ -27,7 +27,7 @@ const ModalHeader: React.FunctionComponent<ModalHeaderProps> = ({ open }) => {
             <li className="p-5">
               <a
                 href="/place"
-                className="font-jacquesFrancois sm:text-lg lg:text-2xl xl:text-4xl 2xl:text-5xl text-white hover:underline"
+                className="font-jacquesFrancois sm:text-lg lg:text-2xl xl:text-4xl 2xl:text-3xl text-white hover:underline"
               >
                 Un lieu
               </a>
@@ -35,7 +35,7 @@ const ModalHeader: React.FunctionComponent<ModalHeaderProps> = ({ open }) => {
             <li className="p-5">
               <a
                 href="/moment"
-                className="font-jacquesFrancois sm:text-lg lg:text-2xl xl:text-4xl 2xl:text-5xl text-white hover:underline"
+                className="font-jacquesFrancois sm:text-lg lg:text-2xl xl:text-4xl 2xl:text-3xl text-white hover:underline"
               >
                 Un moment
               </a>
@@ -43,7 +43,7 @@ const ModalHeader: React.FunctionComponent<ModalHeaderProps> = ({ open }) => {
             <li className="p-5">
               <a
                 href="/find_us"
-                className="font-jacquesFrancois sm:text-lg lg:text-2xl xl:text-4xl 2xl:text-5xl text-white hover:underline"
+                className="font-jacquesFrancois sm:text-lg lg:text-2xl xl:text-4xl 2xl:text-3xl text-white hover:underline"
               >
                 Nous trouver
               </a>

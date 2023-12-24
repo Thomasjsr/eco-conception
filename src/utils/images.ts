@@ -29,6 +29,11 @@ import clos_des_sens_juin_2022_salle_37 from "../assets/webp-images/clos_des_sen
 
 import clos_des_sens_sept_2018_reportage_77 from "../assets/webp-images/clos_des_sens_sept_2018_reportage_77.webp";
 
+import mushroomVideo from "../assets/src-eco-conception/fb254904-d9a9dd39.mp4";
+
+import menuPDF from "../assets/src-eco-conception/menu.pdf";
+import vinsPDF from "../assets/src-eco-conception/carte-des-vins.pdf";
+
 const imagesHomeFirstCarousel: string[] = [
     reportage_portraits_cuisine_salle_46,
     CLOS_DES_SENS_MATTHIEU_CELLARD_SALLE_38_2,
@@ -76,5 +81,8 @@ export {
     imagesMomentSecond3,
     imagesMomentFourLeft,
     imagesMomentFourRight,
-    imagesFind
+    imagesFind,
+    mushroomVideo,
+    menuPDF,
+    vinsPDF
 }
