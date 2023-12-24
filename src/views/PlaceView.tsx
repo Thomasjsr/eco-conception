@@ -17,7 +17,11 @@ const { Text } = Typography;
 
 const PlaceView: React.FunctionComponent<RouteProps> = () => {
     const [open, setOpen] = useState(window.innerWidth > 640 ? false : true);
+    const [videoPlaying, setVideoPlaying] = useState(false);
 
+    const handleVideoHover = (play: boolean) => {
+        setVideoPlaying(play);
+    };
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth > 640) {
@@ -31,7 +35,6 @@ const PlaceView: React.FunctionComponent<RouteProps> = () => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
-
     return (
         <div className="flex flex-col h-screen">
             <ModalHeader open={!open} />
@@ -87,7 +90,23 @@ const PlaceView: React.FunctionComponent<RouteProps> = () => {
                         </div>
                     </div>
                     <div className="w-1/2">
-                        <img src={imagesPlaceThirdRight} className="object-cover h-full w-screen" />
+                        {videoPlaying === false && (
+                            <img
+                                src={imagesPlaceThirdRight}
+                                className="object-cover h-full w-screen"
+                                onMouseEnter={() => handleVideoHover(true)}
+                                onMouseLeave={() => handleVideoHover(false)}
+                            />
+                        )}
+                        {videoPlaying === true && (
+                            <iframe
+                                className="h-full w-full"
+                                src="https://www.youtube.com/embed/uceaJ__FZg4?autoplay=1&loop=1"
+                                allowFullScreen
+                                onMouseEnter={() => handleVideoHover(true)}
+                                onMouseLeave={() => handleVideoHover(false)}
+                            />
+                        )}
                     </div>
                 </div>
                 <ModalFooter />
