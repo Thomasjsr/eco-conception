@@ -13,7 +13,7 @@ interface ModalHeaderProps {
 const ModalHeader: React.FunctionComponent<ModalHeaderProps> = ({ open }) => {
   return (
     <div>
-      <div className={`fixed flex w-screen items-center justify-between p-6 ${open === true ? "" : "hidden"}`}>
+      <div className={`fixed z-[9999] flex w-screen items-center justify-between p-6 ${open === true ? "" : "hidden"}`}>
         <div>
           <Link to={"/"} className="flex items-center justify-between">
             <img src={Logo} className="mr-3" />

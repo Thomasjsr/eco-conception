@@ -6,6 +6,7 @@ import { Typography } from 'antd';
 import ModalHeaderMobile from "../components/ModalHeaderMobile";
 import { imagesHomeFirstCarousel, imagesHomeSecondCarousel, imagesHomeThirdCarousel } from "../utils/images"
 import Carousel from "../components/Carousel"
+import MapComponent from "../components/Map";
 
 const { Text } = Typography;
 
@@ -83,8 +84,8 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                             </Text>
                         </div>
                     </div>
-                    <div className="w-full sm:w-1/2 h-1/2 sm:h-full bg-white">
-                        map
+                    <div className="w-full sm:w-1/2 h-1/2 sm:h-full bg-white overflow-hidden">
+                        <MapComponent />
                     </div>
                 </div>
                 <ModalFooter />

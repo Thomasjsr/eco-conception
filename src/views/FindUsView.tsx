@@ -3,6 +3,7 @@ import { RouteProps } from "react-router-dom";
 import ModalHeader from "../components/ModalHeader";
 import ModalHeaderMobile from "../components/ModalHeaderMobile";
 import ModalFooter from "../components/ModalFooter";
+import MapComponent from "../components/Map";
 
 const FindUsView: React.FunctionComponent<RouteProps> = () => {
     const [open, setOpen] = useState(window.innerWidth > 640 ? false : true);
@@ -20,6 +21,7 @@ const FindUsView: React.FunctionComponent<RouteProps> = () => {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
+
     return (
         <div className="flex h-screen flex-col justify-between">
             <ModalHeader open={!open} />
@@ -31,7 +33,9 @@ const FindUsView: React.FunctionComponent<RouteProps> = () => {
                     <h1 className="text-white font-bold text-4xl">Accès</h1>
                     <span className="text-white text-lg">13 rue Jean Mermoz<br/>74940 Annecy-le-Vieux, FRANCE</span>
                 </div>
-                <div className="w-full md:w-1/2 h-full bg-white text-black flex items-center justify-center">Map</div>
+                <div className="w-full md:w-1/2 h-full bg-white text-black flex items-center justify-center overflow-hidden">
+                    <MapComponent/>
+                </div>
             </div>
             <div className="min-h-screen bg-black flex flex-col-reverse md:flex-row">
                 <div className="w-full h-full md:h-1/2 md:w-1/2 flex flex-col items-center justify-center">
