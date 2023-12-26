@@ -42,8 +42,8 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                         3* MICHELIN ANNECY<br />
                     </Text>
                 </div>
-                <div className="flex h-1/4 lg:h-screen md:h-1/4">
-                    <div className="flex justify-start items-center w-1/2 bg-[#051528]">
+                <div className="flex flex-col h-screen sm:flex-row">
+                    <div className="flex justify-start items-center w-full sm:w-1/2 h-1/2 sm:h-full bg-[#051528]">
                         <div className="flex flex-col p-3 lg:p-6 lg:w-2/3">
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-5xl text-lg lg:pb-3">
                                 UN LIEU
@@ -53,15 +53,15 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                             </Text>
                         </div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-full h-1/2 sm:h-full sm:w-1/2">
                         <Carousel images={imagesHomeSecondCarousel} />
                     </div>
                 </div>
-                <div className="flex h-1/4 lg:h-screen md:h-1/4">
-                    <div className="w-1/2">
+                <div className="flex flex-col-reverse sm:flex-row h-screen">
+                    <div className="w-full sm:w-1/2 h-1/2 sm:h-full">
                         <Carousel images={imagesHomeThirdCarousel} />
                     </div>
-                    <div className="flex justify-start items-center w-1/2 bg-[#251715]">
+                    <div className="flex justify-start items-center w-full sm:w-1/2 h-1/2 sm:h-full bg-[#251715]">
                         <div className="flex flex-col p-3 lg:p-6 lg:w-2/3">
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-5xl text-lg lg:pb-3">
                                 UN MOMENT
@@ -72,8 +72,8 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex h-1/4 lg:h-screen md:h-1/4">
-                    <div className="flex justify-start items-center w-1/2 bg-[#142C08]">
+                <div className="flex h-screen flex-col sm:flex-row">
+                    <div className="flex justify-start items-center w-full sm:w-1/2 h-1/2 sm:h-full bg-[#142C08]">
                         <div className="flex flex-col p-3 lg:p-6 lg:w-2/3">
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-5xl text-lg lg:pb-3">
                                 NOUS TROUVER
@@ -83,7 +83,7 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
                             </Text>
                         </div>
                     </div>
-                    <div className="w-1/2 bg-white">
+                    <div className="w-full sm:w-1/2 h-1/2 sm:h-full bg-white">
                         map
                     </div>
                 </div>

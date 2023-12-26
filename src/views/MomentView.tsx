@@ -54,8 +54,8 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                         <img src={imagesMomentFirst} className="object-cover h-full w-screen" />
                     </div>
                 </div>
-                <div className="flex h-1/4 xl:h-screen md:h-1/4">
-                    <div className="flex justify-start items-center w-1/2 bg-[#251715]">
+                <div className="flex h-screen flex-col sm:flex-row">
+                    <div className="flex justify-start items-center w-full sm:w-1/2 h-1/2 sm:h-full bg-[#251715]">
                         <div className="flex flex-col p-3 lg:p-6 xl:p-10 lg:w-2/3">
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-4xl text-lg lg:pb-3 pb-1">
                                 ÂME VÉGÉTALE ET LACUSTRE
@@ -71,7 +71,7 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                             </Button>
                         </div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-full sm:w-1/2 h-1/2 sm:h-full">
                         <div className="flex h-1/2">
                             <div className="w-1/2">
                                 <img src={imagesMomentSecond1} className="object-cover h-full w-screen" />
@@ -90,11 +90,11 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex h-1/4 xl:h-screen md:h-1/4">
-                    <div className="w-1/2">
+                <div className="flex h-screen flex-col-reverse sm:flex-row">
+                    <div className="w-full sm:w-1/2 h-1/2 sm:h-full">
                         <video src={mushroomVideo} autoPlay={true} loop className="object-cover h-full w-screen" />
                     </div>
-                    <div className="flex justify-start items-center w-1/2 bg-[#251715]">
+                    <div className="flex justify-start items-center w-full sm:w-1/2 h-1/2 sm:h-full bg-[#251715]">
                         <div className="flex flex-col p-3 lg:p-6 lg:w-2/3">
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-4xl text-lg lg:pb-3">
                                 LA CUEILLETTE
@@ -105,8 +105,8 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex h-1/4 xl:h-screen md:h-1/4">
-                    <div className="flex flex-col justify-start items-center w-1/2 bg-[#251715]">
+                <div className="flex h-screen flex-col sm:flex-row">
+                    <div className="flex flex-col justify-start items-center w-full sm:w-1/2 h-1/2 sm:h-full bg-[#251715]">
                         <div className="flex flex-col justify-center items-start p-3 lg:p-6 h-1/2 w-full">
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-4xl text-lg lg:pb-3 pb-1">
                                 VERRE DU TERROIR
@@ -121,11 +121,11 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                                 La carte des vins
                             </Button>
                         </div>
-                        <div className="flex h-1/2 bg-white">
+                        <div className="flex w-full h-1/2 sm:h-full bg-white">
                             <img src={imagesMomentFourLeft} className="object-cover h-full w-screen" />
                         </div>
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-full sm:w-1/2 h-1/2 sm:h-full">
                         <img src={imagesMomentFourRight} className="object-cover h-full w-screen" />
                     </div>
                 </div>
