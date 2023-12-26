@@ -49,10 +49,10 @@ const FindUsView: React.FunctionComponent<RouteProps> = () => {
                     </form>
                 </div>
                 <div className="w-full h-full md:h-1/2 md:w-1/2 flex flex-col text-white md:py-24">
-                    <h1 className="text-4xl font-bold m-2">Nous contacter</h1>
-                    <span className="m-4">Tél. : +33 (0)4 50 23 07 90</span>
-                    <h1 className="text-4xl font-bold m-4">Services</h1>
-                    <div className="w-full h-full flex m-2">
+                    <h1 className="text-4xl font-bold m-2 text-center md:text-start">Nous contacter</h1>
+                    <span className="m-4 text-center md:text-start">Tél. : +33 (0)4 50 23 07 90</span>
+                    <h1 className="text-4xl font-bold m-4 text-center md:text-start">Services</h1>
+                    <div className="w-full h-full flex m-2 text-center justify-evenly sm:justify-center md:justify-start md:text-start">
                         <div className="w-1/4 h-full flex flex-col items-start">
                             <span className="">Mardi</span>
                             <span className="">Mercredi</span>
