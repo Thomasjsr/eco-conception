@@ -60,12 +60,12 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-4xl text-lg lg:pb-3 pb-1">
                                 ÂME VÉGÉTALE ET LACUSTRE
                             </Text>
-                            <Text className="text-[#F2F2F2] font-openSansLight sm:text-xl lg:text-2xl text-xs lg:tracking-wide pb-2">
+                            <Text className="text-[#F2F2F2] font-sans font-light sm:text-xl lg:text-2xl text-xs lg:tracking-wide pb-2">
                                 Reflet d’un garde-manger nourricier, la cuisine, brut et authentique dessine ses lignes dans ses courbes sauvages et charnelles sans contour
                             </Text>
                             <Button
                                 onClick={() => handleDownloadMenu(menuPDF, "menu.pdf")}
-                                className="flex items-center justify-center text-white font-openSansLight w-2/3 sm:w-40 xl:w-60 xl:h-10 sm:text-xl lg:text-2xl text-xs"
+                                className="flex items-center justify-center text-white font-sans w-2/3 sm:w-40 xl:w-60 xl:h-10 sm:text-xl lg:text-2xl text-xs"
                             >
                                 Notre menu
                             </Button>
@@ -99,7 +99,7 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-4xl text-lg lg:pb-3">
                                 LA CUEILLETTE
                             </Text>
-                            <Text className="text-[#F2F2F2] font-openSansLight sm:text-xl lg:text-2xl text-xs lg:tracking-wide">
+                            <Text className="text-[#F2F2F2] font-sans font-light sm:text-xl lg:text-2xl text-xs lg:tracking-wide">
                                 Inspiration quotidienne, dans son jus, le végétal s’exprime au gré du temps, dans ses moindres mouvements, discret ou profus, libre d’être soi.
                             </Text>
                         </div>
@@ -111,12 +111,12 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-4xl text-lg lg:pb-3 pb-1">
                                 VERRE DU TERROIR
                             </Text>
-                            <Text className="text-[#F2F2F2] font-openSansLight sm:text-xl lg:text-2xl text-xs lg:tracking-wide pb-2">
+                            <Text className="text-[#F2F2F2] font-sans font-light sm:text-xl lg:text-2xl text-xs lg:tracking-wide pb-2">
                                 Explorer un territoire et rendre à la vigne la beauté des racines locales, les cépages d’ici, écho aux flacons d’ailleurs, la pertinence d’une équipe sommelière en totale cohérence
                             </Text>
                             <Button
                                 onClick={() => handleDownloadMenu(vinsPDF, "carte-des-vins.pdf")}
-                                className="flex items-center justify-center text-white font-openSansLight w-2/3 sm:w-40 lg:w-60 xl:w-60 xl:h-10 sm:text-xl lg:text-2xl text-xs"
+                                className="flex items-center justify-center text-white font-sans w-2/3 sm:w-40 lg:w-60 xl:w-60 xl:h-10 sm:text-xl lg:text-2xl text-xs"
                             >
                                 La carte des vins
                             </Button>

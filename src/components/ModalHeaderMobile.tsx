@@ -23,35 +23,35 @@ const ModalHeaderMobile: React.FunctionComponent<ModalHeaderMobileProps> = ({ op
             <img src={Logo} className="mr-3" />
           </Link>
         </div>
-        {isListVisible ? <CloseOutlined onClick={toggleListVisibility} className="text-2xl text-white cursor-pointer"/> : <MenuOutlined onClick={toggleListVisibility} className="text-2xl text-white cursor-pointer"/>}
+        {isListVisible ? <CloseOutlined onClick={toggleListVisibility} className="text-2xl text-white cursor-pointer" /> : <MenuOutlined onClick={toggleListVisibility} className="text-2xl text-white cursor-pointer" />}
         {isListVisible && (
-             <ul className="absolute top-20 right-0 text-white">
-              <li className="p-2">
-                <a
-                  href="/place"
-                  className="font-jacquesFrancois sm:text-lg lg:text-2xl text-white hover:underline"
-                >
-                  Un lieu
-                </a>
-              </li>
-              <li className="p-2">
-                <a
-                  href="/moment"
-                  className="font-jacquesFrancois sm:text-lg lg:text-2xl text-white hover:underline"
-                >
-                  Un moment
-                </a>
-              </li>
-              <li className="p-2">
-                <a
-                  href="/find_us"
-                  className="font-jacquesFrancois sm:text-lg lg:text-2xl text-white hover:underline"
-                >
-                  Nous trouver
-                </a>
-              </li>
-            </ul>
-          )}
+          <ul className="absolute top-20 right-0 text-white">
+            <li className="p-2">
+              <a
+                href="/place"
+                className="font-serif sm:text-lg lg:text-2xl text-white hover:underline"
+              >
+                Un lieu
+              </a>
+            </li>
+            <li className="p-2">
+              <a
+                href="/moment"
+                className="font-serif sm:text-lg lg:text-2xl text-white hover:underline"
+              >
+                Un moment
+              </a>
+            </li>
+            <li className="p-2">
+              <a
+                href="/find_us"
+                className="font-serif sm:text-lg lg:text-2xl text-white hover:underline"
+              >
+                Nous trouver
+              </a>
+            </li>
+          </ul>
+        )}
       </div>
     </div>
   );

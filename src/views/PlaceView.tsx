@@ -51,7 +51,7 @@ const PlaceView: React.FunctionComponent<RouteProps> = () => {
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-5xl text-lg lg:pb-3">
                                 UN LIEU
                             </Text>
-                            <Text className="text-[#F2F2F2] font-openSansLight sm:text-xl lg:text-4xl text-xs lg:tracking-wide">
+                            <Text className="text-[#F2F2F2] font-sans font-light sm:text-xl lg:text-4xl text-xs lg:tracking-wide">
                                 Univers singulier, identitaire et façonné par l’homme. Essences de bois brulé, pierre de Savoie et cristal taillé, la salle, apaisante et épurée, accueille l’authentique transparence réconfort
                             </Text>
                         </div>
@@ -69,7 +69,7 @@ const PlaceView: React.FunctionComponent<RouteProps> = () => {
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-5xl text-lg lg:pb-3">
                                 LE JARDIN
                             </Text>
-                            <Text className="text-[#F2F2F2] font-openSansLight sm:text-xl lg:text-4xl text-xs lg:tracking-wide">
+                            <Text className="text-[#F2F2F2] font-sans font-light sm:text-xl lg:text-4xl text-xs lg:tracking-wide">
                                 Inspiration quotidienne, dans son jus, le végétal s’exprime au gré du temps, dans ses moindres mouvements, discret ou profus, libre d’être soi.
                             </Text>
                         </div>
@@ -81,7 +81,7 @@ const PlaceView: React.FunctionComponent<RouteProps> = () => {
                             <Text className="text-white font-changaOne sm:text-3xl lg:text-5xl text-lg lg:pb-3">
                                 ESPRITS ENGAGÉS
                             </Text>
-                            <Text className="text-[#F2F2F2] font-openSansLight sm:text-xl lg:text-4xl text-xs lg:tracking-wide">
+                            <Text className="text-[#F2F2F2] font-sans font-light sm:text-xl lg:text-4xl text-xs lg:tracking-wide">
                                 Épouser une identité unique, pousser jusqu’à l’ultime sa passion sensible et émotionnelle, curieuse et libre d’être.
                             </Text>
                         </div>
