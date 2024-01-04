@@ -37,8 +37,8 @@ const FindUsView: React.FunctionComponent<RouteProps> = () => {
                     <MapComponent/>
                 </div>
             </div>
-            <div className="min-h-screen bg-black flex flex-col-reverse md:flex-row">
-                <div className="w-full h-full md:h-1/2 md:w-1/2 flex flex-col items-center justify-center">
+            <div className="min-h-screen bg-black flex flex-col-reverse md:flex-row py-10">
+                <div className="w-full h-full  md:w-1/2 flex flex-col items-center justify-center">
                     <form className="h-full w-full flex justify-start flex-col px-10 items-center md:py-20 text-white">
                         <div className="flex w-full items-center justify-between my-4">
                             <input className="border p-2 border-white bg-black w-[45%]" type="text" placeholder="Nom *" required></input>
@@ -49,7 +49,7 @@ const FindUsView: React.FunctionComponent<RouteProps> = () => {
                             <input className="border p-2 border-white bg-black w-[45%]" type="email" placeholder="Mail *" required></input>
                         </div>
                         <textarea placeholder="Votre Message *" required className="resize-none bg-black border border-white w-full h-[30%] min-h-[150px] md:min-h-[250px] my-4"></textarea>
-                        <button className="bg-white text-black font-bold w-[75%] h-[45px] md:w-[400px] rounded-md md:h-[56px]">Nous contacter</button>
+                        <button className="bg-white text-black font-bold w-[75%] h-[50px] w-full rounded-md">Nous contacter</button>
                     </form>
                 </div>
                 <div className="w-full h-full md:h-1/2 md:w-1/2 flex flex-col text-white md:py-24">

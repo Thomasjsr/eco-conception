@@ -62,7 +62,7 @@ const PlaceView: React.FunctionComponent<RouteProps> = () => {
                 </div>
                 <div className="flex h-screen flex-col-reverse sm:flex-row">
                     <div className="w-full sm:w-1/2 h-1/2 sm:h-full">
-                        <img src={imagesPlaceSecond} className="object-cover h-full w-screen" />
+                        <img src={imagesPlaceSecond} className="object-cover h-full w-screen" loading="lazy"/>
                     </div>
                     <div className="flex justify-start items-center w-full sm:w-1/2 h-1/2 sm:h-full bg-[#051528]">
                         <div className="flex flex-col p-3 lg:p-6 lg:w-2/3">
@@ -86,7 +86,7 @@ const PlaceView: React.FunctionComponent<RouteProps> = () => {
                             </Text>
                         </div>
                         <div className="flex w-full h-1/2 sm:h-full bg-white">
-                            <img src={imagesPlaceThirdLeft} className="object-cover h-full w-screen" />
+                            <img src={imagesPlaceThirdLeft} className="object-cover h-full w-screen" loading="lazy"/>
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2 h-1/2 sm:h-full">

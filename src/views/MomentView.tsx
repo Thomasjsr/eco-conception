@@ -73,19 +73,19 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                     </div>
                     <div className="w-full sm:w-1/2 h-1/2 sm:h-full">
                         <div className="flex h-1/2">
-                            <div className="w-1/2">
-                                <img src={imagesMomentSecond1} className="object-cover h-full w-screen" />
+                            <div className="block w-1/2">
+                                <img src={imagesMomentSecond1} className="object-cover h-full w-screen" loading="lazy"/>
                             </div>
                             <div className="w-1/2">
-                                <img src={imagesMomentSecond3} className="object-cover h-full w-screen" />
+                                <img src={imagesMomentSecond3} className="object-cover h-full w-screen" loading="lazy"/>
                             </div>
                         </div>
                         <div className="flex h-1/2">
                             <div className="w-1/2">
-                                <img src={imagesMomentSecond2} className="object-cover h-full w-screen" />
+                                <img src={imagesMomentSecond2} className="object-cover h-full w-screen" loading="lazy"/>
                             </div>
                             <div className="w-1/2">
-                                <img src={imagesMomentFirst} className="object-cover h-full w-screen" />
+                                <img src={imagesMomentFirst} className="object-cover h-full w-screen" loading="lazy"/>
                             </div>
                         </div>
                     </div>
@@ -122,11 +122,11 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                             </Button>
                         </div>
                         <div className="flex w-full h-1/2 sm:h-full bg-white">
-                            <img src={imagesMomentFourLeft} className="object-cover h-full w-screen" />
+                            <img src={imagesMomentFourLeft} className="object-cover h-full w-screen" loading="lazy"/>
                         </div>
                     </div>
                     <div className="w-full sm:w-1/2 h-1/2 sm:h-full">
-                        <img src={imagesMomentFourRight} className="object-cover h-full w-screen" />
+                        <img src={imagesMomentFourRight} className="object-cover h-full w-screen" loading="lazy"/>
                     </div>
                 </div>
                 <ModalFooter />
