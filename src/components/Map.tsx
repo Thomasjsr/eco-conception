@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Map, Marker, ZoomControl } from "pigeon-maps"
 
 const MapComponent: React.FunctionComponent = () => {

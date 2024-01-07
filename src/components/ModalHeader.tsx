@@ -25,28 +25,28 @@ const ModalHeader: React.FunctionComponent<ModalHeaderProps> = ({ open }) => {
         <div className="items-stretch p-1">
           <ul className="flex">
             <li className="p-5">
-              <a
-                href="/place"
+              <Link
+                to="/place"
                 className="font-serif sm:text-lg lg:text-2xl xl:text-4xl 2xl:text-3xl text-white hover:underline"
               >
                 Un lieu
-              </a>
+              </Link>
             </li>
             <li className="p-5">
-              <a
-                href="/moment"
+              <Link
+                to="/moment"
                 className="font-serif sm:text-lg lg:text-2xl xl:text-4xl 2xl:text-3xl text-white hover:underline"
               >
                 Un moment
-              </a>
+              </Link>
             </li>
             <li className="p-5">
-              <a
-                href="/find_us"
+              <Link
+                to="/find_us"
                 className="font-serif sm:text-lg lg:text-2xl xl:text-4xl 2xl:text-3xl text-white hover:underline"
               >
                 Nous trouver
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

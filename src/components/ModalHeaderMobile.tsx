@@ -27,28 +27,28 @@ const ModalHeaderMobile: React.FunctionComponent<ModalHeaderMobileProps> = ({ op
         {isListVisible && (
           <ul className="absolute top-20 right-0 text-white">
             <li className="p-2">
-              <a
-                href="/place"
+              <Link
+                to="/place"
                 className="font-serif sm:text-lg lg:text-2xl text-white hover:underline"
               >
                 Un lieu
-              </a>
+              </Link>
             </li>
             <li className="p-2">
-              <a
-                href="/moment"
+              <Link
+                to="/moment"
                 className="font-serif sm:text-lg lg:text-2xl text-white hover:underline"
               >
                 Un moment
-              </a>
+              </Link>
             </li>
             <li className="p-2">
-              <a
-                href="/find_us"
+              <Link
+                to="/find_us"
                 className="font-serif sm:text-lg lg:text-2xl text-white hover:underline"
               >
                 Nous trouver
-              </a>
+              </Link>
             </li>
           </ul>
         )}
