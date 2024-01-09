@@ -4,6 +4,9 @@ import ModalHeader from "../components/ModalHeader";
 import ModalHeaderMobile from "../components/ModalHeaderMobile";
 import ModalFooter from "../components/ModalFooter";
 import MapComponent from "../components/Map";
+import EmailForm from "../components/mail";
+import { ToastContainer } from 'react-toastify';
+
 
 const FindUsView: React.FunctionComponent<RouteProps> = () => {
     const [open, setOpen] = useState(window.innerWidth > 640 ? false : true);
@@ -22,8 +25,10 @@ const FindUsView: React.FunctionComponent<RouteProps> = () => {
         };
     }, []);
 
+
     return (
         <div className="flex h-screen flex-col justify-between">
+            <ToastContainer position="bottom-right" autoClose={2000} closeOnClick theme="dark"/>
             <ModalHeader open={!open} />
             <ModalHeaderMobile open={open} />
             <div className="bg-cover bg-center min-h-screen bg-[url('./assets/webp-images/clos_des_sens_juin_2022_salle_7.webp')]">
@@ -38,7 +43,8 @@ const FindUsView: React.FunctionComponent<RouteProps> = () => {
                 </div>
             </div>
             <div className="min-h-screen bg-black flex flex-col-reverse md:flex-row py-10">
-                <div className="w-full h-full  md:w-1/2 flex flex-col items-center justify-center">
+                <EmailForm/>
+                {/* <div className="w-full h-full  md:w-1/2 flex flex-col items-center justify-center">
                     <form className="h-full w-full flex justify-start flex-col px-10 items-center md:py-20 text-white">
                         <div className="flex w-full items-center justify-between my-4">
                             <input className="border p-2 border-white bg-black w-[45%]" type="text" placeholder="Nom *" required></input>
@@ -51,7 +57,8 @@ const FindUsView: React.FunctionComponent<RouteProps> = () => {
                         <textarea placeholder="Votre Message *" required className="resize-none bg-black border border-white w-full h-[30%] min-h-[150px] md:min-h-[250px] my-4"></textarea>
                         <button className="bg-white text-black font-bold w-[75%] h-[50px] w-full rounded-md">Nous contacter</button>
                     </form>
-                </div>
+                </div> */}
+
                 <div className="w-full h-full md:h-1/2 md:w-1/2 flex flex-col text-white md:py-24">
                     <h1 className="text-4xl font-bold m-2 text-center md:text-start">Nous contacter</h1>
                     <span className="m-4 text-center md:text-start">Tél. : +33 (0)4 50 23 07 90</span>
