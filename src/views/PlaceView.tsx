@@ -40,7 +40,7 @@ const PlaceView: React.FunctionComponent<RouteProps> = () => {
             <ModalHeader open={!open} />
             <ModalHeaderMobile open={open} />
             <div className="w-screen">
-                <div className="flex h-1/4 lg:h-screen md:h-1/4 justify-start items-end">
+                <div className="flex h-1/4 lg:h-screen md:h-screen justify-start items-end">
                     <div className="h-full">
                         <img src={imagesPlaceFirst} className="object-cover h-full w-screen" />
                     </div>

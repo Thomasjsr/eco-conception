@@ -44,21 +44,6 @@ const FindUsView: React.FunctionComponent<RouteProps> = () => {
             </div>
             <div className="min-h-screen bg-black flex flex-col-reverse md:flex-row py-10">
                 <EmailForm/>
-                {/* <div className="w-full h-full  md:w-1/2 flex flex-col items-center justify-center">
-                    <form className="h-full w-full flex justify-start flex-col px-10 items-center md:py-20 text-white">
-                        <div className="flex w-full items-center justify-between my-4">
-                            <input className="border p-2 border-white bg-black w-[45%]" type="text" placeholder="Nom *" required></input>
-                            <input className="border p-2 border-white bg-black w-[45%]" type="text" placeholder="Prénom *" required></input>
-                        </div>
-                        <div className="flex w-full items-center justify-between my-4">
-                            <input className="border p-2 border-white bg-black w-[45%]" type="text" placeholder="Téléphone *" required></input>
-                            <input className="border p-2 border-white bg-black w-[45%]" type="email" placeholder="Mail *" required></input>
-                        </div>
-                        <textarea placeholder="Votre Message *" required className="resize-none bg-black border border-white w-full h-[30%] min-h-[150px] md:min-h-[250px] my-4"></textarea>
-                        <button className="bg-white text-black font-bold w-[75%] h-[50px] w-full rounded-md">Nous contacter</button>
-                    </form>
-                </div> */}
-
                 <div className="w-full h-full md:h-1/2 md:w-1/2 flex flex-col text-white md:py-24">
                     <h1 className="text-4xl font-bold m-2 text-center md:text-start">Nous contacter</h1>
                     <span className="m-4 text-center md:text-start">Tél. : +33 (0)4 50 23 07 90</span>

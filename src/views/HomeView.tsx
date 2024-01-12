@@ -30,8 +30,8 @@ const HomeView: React.FunctionComponent<RouteProps> = () => {
         <div className="flex flex-col h-screen">
             <ModalHeader open={!open} />
             <ModalHeaderMobile open={open} />
-            <div className="w-screen">
-                <div className="flex h-1/4 lg:h-screen md:h-1/4 justify-start items-end">
+            <div className="w-screen h-screen">
+                <div className="flex h-full justify-start items-end">
                     <div className="h-full">
                         <Carousel images={imagesHomeFirstCarousel} />
                     </div>
