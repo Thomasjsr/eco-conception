@@ -11,7 +11,7 @@ import {
     imagesMomentSecond3,
     imagesMomentFourLeft,
     imagesMomentFourRight,
-    mushroomVideo,
+    mushroomImage,
     menuPDF,
     vinsPDF
 } from "../utils/images"
@@ -92,7 +92,7 @@ const MomentView: React.FunctionComponent<RouteProps> = () => {
                 </div>
                 <div className="flex h-screen flex-col-reverse sm:flex-row">
                     <div className="w-full sm:w-1/2 h-1/2 sm:h-full">
-                        <video src={mushroomVideo} autoPlay={true} loop className="object-cover h-full w-screen" />
+                        <img src={mushroomImage} className="object-cover h-full w-screen" loading="lazy"/>
                     </div>
                     <div className="flex justify-start items-center w-full sm:w-1/2 h-1/2 sm:h-full bg-[#251715]">
                         <div className="flex flex-col p-3 lg:p-6 lg:w-2/3">
