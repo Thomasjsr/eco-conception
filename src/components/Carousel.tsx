@@ -17,7 +17,13 @@ const Carousel: React.FunctionComponent<CarouselProps> = ({ images }) => {
 
   return (
     <div className="h-full transition-transform duration-700">
-      <img src={images[currentImageIndex]} className="object-cover h-full w-screen"></img>
+      <img
+        src={images[currentImageIndex]}
+        srcSet={`${images[currentImageIndex]} 1x, ${images[currentImageIndex]} 2x`}
+        sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33.3vw"
+        className="object-cover h-full w-screen"
+        alt={`Image ${currentImageIndex + 1}`}
+      />
     </div>
   );
 };
