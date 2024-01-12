@@ -4,10 +4,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 
 const EmailForm: React.FC = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
 
   function initMail(): void {
-    if (form) {
+    if (form && form.current) {
       emailjs.sendForm("service_pbzvivd", "template_n484sln", form.current, "fhFOm9qVTAPEkO2RY")
         .then((result) => {
           toast.success("Mail envoyé");
@@ -16,7 +16,7 @@ const EmailForm: React.FC = () => {
           toast.error(error.text);
           console.log(error.text);
         });
-      form.current.reset();
+        form.current.reset();
     }
   }
   const sendEmail = (event: { preventDefault: () => void; }): void => {
